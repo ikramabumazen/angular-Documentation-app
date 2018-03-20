@@ -1,0 +1,6 @@
+ 
+in last 4 commits we only plit up 
+large components into smaller sub-components, each focused on a specific task or workflow.
+
+SO ,The HeroesComponent only present the list of heroes. 
+The HeroDetailsComponent present details of a selected hero.
