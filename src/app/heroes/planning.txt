@@ -1,6 +1,17 @@
- 
-in last 4 commits we only plit up 
-large components into smaller sub-components, each focused on a specific task or workflow.
+TOTURIAL/Services :
+1-HeroesComponent will be lean and focused on supporting the view ( represents the data )
+[ Components shouldn't fetch or save data directly and they certainly shouldn't knowingly present fake data.
+ They should focus on presenting data and delegate data access to a service.]
 
-SO ,The HeroesComponent only present the list of heroes. 
-The HeroDetailsComponent present details of a selected hero.
+ 2-I'll create a HeroService that all application classes can use to get heroes.
+
+ 3-instead of creating that service with new, you'll rely on Angular dependency injection 
+ to inject it into the HeroesComponent constructor.
+
+ 4-You must provide the HeroService in the dependency injection system before Angular can 
+ inject it into the HeroesComponent, as you will do below.
+
+5-There are several ways to provide the HeroService: 
+in the HeroesComponent, 
+in the AppComponent, 
+in the AppModule. Each option has pros and cons.
